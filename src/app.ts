@@ -1,8 +1,14 @@
+import 'materialize-css/js/jquery.hammer';
+import 'materialize-css/js/hammer.min';
+import 'materialize-css/dist/css/materialize.min.css';
+import 'materialize-css/dist/js/materialize.min';
 import m, { RouteDefs, Vnode } from 'mithril';
 import './styles.css';
 import { Layout } from './views/layout';
 import { UserForm } from './views/user-form';
 import { UserList } from './views/user-list';
+
+export const M: { updateTextFields: () => void } = (window as any).Materialize;
 
 const routingTable: RouteDefs = {
   '/create': {

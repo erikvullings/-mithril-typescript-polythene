@@ -7,6 +7,8 @@ export interface IUser {
 }
 
 const log = console.log;
+const error = console.error;
+
 const baseUrl = 'https://rem-rest-api.herokuapp.com/api/users/';
 
 export const User = {
@@ -23,8 +25,7 @@ export const User = {
         log(`Created user with id: ${result.id}.`);
         m.route.set('/list');
       })
-      // tslint:disable-next-line:no-console
-      .catch((err) => console.error(err)),
+      .catch((err) => error(err)),
   delete: (id: number) =>
     m
       .request<IUser>({
@@ -36,8 +37,7 @@ export const User = {
         log(`Deleted user with id: ${id}.`);
         m.route.set('/list');
       })
-      // tslint:disable-next-line:no-console
-      .catch((err) => console.error(err)),
+      .catch((err) => error(err)),
   list: [] as IUser[],
   load: (id: number) =>
     m
@@ -47,6 +47,7 @@ export const User = {
         withCredentials: true,
       })
       .then((result) => {
+        log(result);
         User.current = result;
       }),
   loadList: () =>

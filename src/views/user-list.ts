@@ -1,13 +1,14 @@
-import m, { Vnode } from 'mithril';
+import { button } from './../utils/html';
+import m from 'mithril';
 import { User } from './../models/user';
 
-export const UserList = (vnode: Vnode) => ({
+export const UserList = () => ({
   oncreate: User.loadList,
   view: () =>
-    m('.user-list', [
+    m('ul.collection', [
       User.list.map((user) =>
         m(
-          'a.user-list-item',
+          'a.collection-item',
           {
             href: '/edit/' + user.id,
             oncreate: m.route.link,
@@ -16,6 +17,7 @@ export const UserList = (vnode: Vnode) => ({
         )
       ),
       ,
-      m('button.button[type=button]', { href: '/create', oncreate: m.route.link }, 'New user'),
+      button('New user', {}, { href: '/create', oncreate: m.route.link }),
+      // m('a.waves-effect.waves-light.btn', { href: '/create', oncreate: m.route.link }, 'New user'),
     ]),
 });

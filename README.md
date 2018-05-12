@@ -1,6 +1,6 @@
-# Mithril-TypeScript-Polythene
+# Mithril-TypeScript-Materialize
 
-Converted [Mithril's](https://mithril.js.org) [simple application example, v1.1.6](https://mithril.js.org/simple-application.html) to TypeScript, and added the Polythene materialize theme.
+Converted [Mithril's](https://mithril.js.org) [simple application example, v1.1.6](https://mithril.js.org/simple-application.html) to TypeScript, and added the Materialize theme.
 
 If you are only interested in the Mithril-TypeScript version, check out the tag mithril-typescript-version.
 

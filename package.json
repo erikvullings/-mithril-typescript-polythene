@@ -10,6 +10,7 @@
   "author": "Erik Vullings <erik.vullings@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "materialize-css": "^0.100.2",
     "mithril": "^1.1.6"
   },
   "devDependencies": {
