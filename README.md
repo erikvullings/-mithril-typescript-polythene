@@ -2,7 +2,7 @@
 
 Converted [Mithril's](https://mithril.js.org) [simple application example, v1.1.6](https://mithril.js.org/simple-application.html) to TypeScript, and added the Polythene materialize theme.
 
-If you are only interested in the Mithril-TypeScript version, check out the tag mithril-typescript.
+If you are only interested in the Mithril-TypeScript version, check out the tag mithril-typescript-version.
 
 In addition, I've also added the Delete and Create pages, where the Create page reuses most of the Edit page.
 
