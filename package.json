@@ -1,0 +1,21 @@
+{
+  "name": "mithril-typescript-polythene-example",
+  "version": "0.0.1",
+  "description": "Converted Mithril's simple application example to TypeScript, and added the Polythene materialize theme.",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Erik Vullings <erik.vullings@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mithril": "^1.1.6"
+  },
+  "devDependencies": {
+    "@types/mithril": "^1.1.12",
+    "autoprefixer": "^8.4.1",
+    "parcel-bundler": "^1.8.1",
+    "typescript": "^2.8.3"
+  }
+}
